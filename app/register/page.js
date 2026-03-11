@@ -13,11 +13,11 @@ alert("Service Request Submitted");
 
 return(
 
-<div className="flex h-screen">
+<div className="min-h-screen bg-gray-100">
 
-{/* LEFT IMAGE */}
+{/* HERO IMAGE */}
 
-<div className="hidden md:flex w-1/2 h-full overflow-hidden relative">
+<div className="relative h-[320px] w-full overflow-hidden">
 
 <img
 src="https://content.jdmagicbox.com/comp/def_content/automobile-electric-repair-and-services/automobile-electric-repair---services-3-1-automobile-electric-repair-and-services-3-c6cns.jpg"
@@ -35,11 +35,11 @@ Battery Service
 </div>
 
 
-{/* RIGHT FORM */}
+{/* SERVICE FORM */}
 
-<div className="flex w-full md:w-1/2 h-full items-center justify-center bg-gray-100">
+<div className="flex justify-center mt-12 px-4">
 
-<div className="bg-white shadow-xl rounded-xl p-8 w-96">
+<div className="bg-white shadow-xl rounded-xl p-8 w-full max-w-md">
 
 <h2 className="text-3xl font-bold text-center mb-6">
 Service Request
@@ -78,7 +78,6 @@ Request Service
 </div>
 
 </div>
-
 );
 
 }
