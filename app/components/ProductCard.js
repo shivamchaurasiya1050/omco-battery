@@ -8,7 +8,7 @@ const [liked,setLiked] = useState(false);
 
 return(
 
-<div className="bg-white rounded-x shadow-md hover:shadow-2xl transition duration-300 overflow-hidden group border">
+<div className="relative bg-white rounded-xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden group">
 
 {/* discount badge */}
 {product.discount && (
@@ -26,7 +26,7 @@ return(
   <img
     src={product.image}
     alt={product.name}
-    className="h-[160px] object-contain"
+   className="h-[160px] object-contain transition-transform duration-300 group-hover:scale-110"
   />
 
 </div>
