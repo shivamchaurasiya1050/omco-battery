@@ -17,7 +17,7 @@ return(
 
 {/* HERO IMAGE */}
 
-<div className="relative h-[320px] w-full overflow-hidden">
+<div className="relative h-[220px] w-full overflow-hidden">
 
 <img
 src="https://content.jdmagicbox.com/comp/def_content/automobile-electric-repair-and-services/automobile-electric-repair---services-3-1-automobile-electric-repair-and-services-3-c6cns.jpg"
