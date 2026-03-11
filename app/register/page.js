@@ -13,11 +13,11 @@ alert("Service Request Submitted");
 
 return(
 
-<div className="flex min-h-screen">
+<div className="flex h-screen">
 
 {/* LEFT IMAGE */}
 
-<div className="hidden md:flex w-1/2 h-screen overflow-hidden relative">
+<div className="hidden md:flex w-1/2 h-full overflow-hidden relative">
 
 <img
 src="https://content.jdmagicbox.com/comp/def_content/automobile-electric-repair-and-services/automobile-electric-repair---services-3-1-automobile-electric-repair-and-services-3-c6cns.jpg"
@@ -37,16 +37,13 @@ Battery Service
 
 {/* RIGHT FORM */}
 
-<div className="flex w-full md:w-1/2 h-screen items-center justify-center bg-gray-100">
+<div className="flex w-full md:w-1/2 h-full items-center justify-center bg-gray-100">
 
 <div className="bg-white shadow-xl rounded-xl p-8 w-96">
 
 <h2 className="text-3xl font-bold text-center mb-6">
 Service Request
 </h2>
-
-
-{/* NAME */}
 
 <input
 className="border border-gray-300 p-3 w-full mb-4 rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
@@ -55,9 +52,6 @@ value={name}
 onChange={(e)=>setName(e.target.value)}
 />
 
-
-{/* PHONE */}
-
 <input
 className="border border-gray-300 p-3 w-full mb-4 rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
 placeholder="Phone Number"
@@ -65,16 +59,12 @@ value={phone}
 onChange={(e)=>setPhone(e.target.value)}
 />
 
-
-{/* PROBLEM */}
-
 <textarea
 className="border border-gray-300 p-3 w-full mb-4 rounded-lg focus:ring-2 focus:ring-yellow-400 outline-none"
 placeholder="Describe your battery problem"
 value={problem}
 onChange={(e)=>setProblem(e.target.value)}
 />
-
 
 <button
 className="bg-yellow-400 hover:bg-yellow-500 w-full py-3 rounded-lg font-semibold"
