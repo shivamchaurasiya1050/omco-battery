@@ -65,21 +65,46 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="md:hidden flex flex-col space-y-4 px-8 pb-6 text-lg">
+      {/* Mobile Menu */}
+{open && (
+  <div className="md:hidden flex flex-col space-y-4 px-8 pb-6 text-lg">
 
-          <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/service">Service</Link>
-          <Link
-            href="/login"
-            className="bg-yellow-400 text-black px-4 py-2 rounded-md w-fit"
-          >
-            Login
-          </Link>
+    <Link href="/" onClick={()=>setOpen(false)}>
+      Home
+    </Link>
 
-        </div>
-      )}
+    <Link href="/products" onClick={()=>setOpen(false)}>
+      Products
+    </Link>
+
+    <Link href="/wishlist" onClick={()=>setOpen(false)}>
+      ❤️ Wishlist
+    </Link>
+
+    <Link href="/cart" className="relative" onClick={()=>setOpen(false)}>
+
+      🛒 Cart
+
+      <span className="absolute -top-2 left-14 bg-yellow-400 text-black px-2 text-sm rounded-full">
+        {cartCount}
+      </span>
+
+    </Link>
+
+    <Link href="/service" onClick={()=>setOpen(false)}>
+      Service
+    </Link>
+
+    <Link
+      href="/register"
+      onClick={()=>setOpen(false)}
+      className="bg-yellow-400 text-black px-4 py-2 rounded-md font-semibold w-fit"
+    >
+      Request Service
+    </Link>
+
+  </div>
+)}
 
     </nav>
   );
